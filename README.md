@@ -9,7 +9,7 @@
 This repository contains all case studies, assignments, implementations and reports developed as part of the Advanced Artificial Intelligence elective during PhD coursework.  
 It explores cutting-edge AI paradigms, optimization techniques and responsible research practices through a mix of coding experiments and research documentation.
 
-Each unit folder corresponds to a specific thematic area of Advanced AI and includes:
+### Each unit folder corresponds to a specific thematic area of Advanced AI and includes:
 
 - Research-oriented case studies
 - Implementation notebooks / scripts
