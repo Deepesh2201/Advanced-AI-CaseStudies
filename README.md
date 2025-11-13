@@ -9,7 +9,7 @@
 This repository contains all case studies, assignments, implementations and reports developed as part of the Advanced Artificial Intelligence elective during PhD coursework.  
 It explores cutting-edge AI paradigms, optimization techniques and responsible research practices through a mix of coding experiments and research documentation.
 
-### Each unit folder corresponds to a specific thematic area of Advanced AI and includes:
+Each unit folder corresponds to a specific thematic area of Advanced AI and includes:
 
 - Research-oriented case studies
 - Implementation notebooks / scripts
@@ -18,7 +18,7 @@ It explores cutting-edge AI paradigms, optimization techniques and responsible r
 
 ---
 
-## 🧩 Repository Structure
+## Repository Structure
 
 | Unit   | Theme                                                        | Focus                                                    |
 | ------ | ------------------------------------------------------------ | -------------------------------------------------------- |
@@ -30,16 +30,11 @@ It explores cutting-edge AI paradigms, optimization techniques and responsible r
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - Languages: Python 3.10, SQL (for data preprocessing)
 - Frameworks: PyTorch, TensorFlow, Hugging Face Transformers
-- Optimization: Optuna, Ray Tune
-- Explainability: SHAP, LIME, Grad-CAM
-- Federated Learning: Flower, PySyft
-- Visualization: Matplotlib, TensorBoard, Plotly
-- Sustainability Tracking: CodeCarbon, Eco2AI
 
 ---
 
-## 📂 Folder Layout
+## Folder Layout
