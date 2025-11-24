@@ -43,9 +43,9 @@ Pruning removes unnecessary weights, neurons, or attention heads from a trained 
 
 ### Real-World Examples
 
-- # Google MobileNet-V2 pruning# – 30–40% faster inference
-- # OpenAI GPT-2 pruning# – reduces parameter count without major accuracy loss
-- # TensorFlow Model Optimization Toolkit# offers magnitude-based pruning for edge devices
+- Google MobileNet-V2 pruning – 30–40% faster inference
+- OpenAI GPT-2 pruning# – reduces parameter count without major accuracy loss
+- TensorFlow Model Optimization Toolkit# offers magnitude-based pruning for edge devices
 
 ---
 
@@ -55,23 +55,23 @@ Pruning removes unnecessary weights, neurons, or attention heads from a trained 
 
 Quantization reduces the precision of weights and activations from floating-point (FP32) to lower-bit formats such as FP16, INT8, or INT4.
 
-### # Types#
+### Types
 
-- ## Post-training quantization (PTQ)
-- ## Quantization-aware training (QAT)
-- ## Dynamic quantization
+- Post-training quantization (PTQ)
+- Quantization-aware training (QAT)
+- Dynamic quantization
 
 ### Benefits
 
-- # 4× reduction in model size (FP32 → INT8)
-- # Faster CPU inference
-- # Very small accuracy drop
+- 4× reduction in model size (FP32 → INT8)
+- Faster CPU inference
+- Very small accuracy drop
 
 ### Real-World Examples
 
-- # LLaMA-3 4-bit quantization# enables on-device LLM inference
-- # Google TensorFlow Lite 8-bit quantization# for Android apps
-- # OpenAI Whisper quantized# runs fast on laptops with small accuracy loss
+- LLaMA-3 4-bit quantization# enables on-device LLM inference
+- Google TensorFlow Lite 8-bit quantization# for Android apps
+- OpenAI Whisper quantized# runs fast on laptops with small accuracy loss
 
 ---
 
@@ -83,25 +83,25 @@ A smaller model (student) is trained to mimic a larger model (teacher) by learni
 
 ### Benefits
 
-- # 2×–20× reduction in size
-- # Nearly same accuracy
-- # Works extremely well for NLP & Transformers
+- 2×–20× reduction in size
+- Nearly same accuracy
+- Works extremely well for NLP & Transformers
 
 ### Real-World Examples
 
-- # DistilBERT is 40% smaller than BERT but retains 97% accuracy
-- # TinyBERT designed for mobile NLP tasks
-- # MobileNet distilled for real-time detection on phones
+- DistilBERT is 40% smaller than BERT but retains 97% accuracy
+- TinyBERT designed for mobile NLP tasks
+- MobileNet distilled for real-time detection on phones
 
 ---
 
 ## 5. Summary Comparison
 
-| Technique       | Size Reduction | Speedup | Accuracy Loss | Best Use Case      |
-| --------------- | -------------- | ------- | ------------- | ------------------ |
-| # Pruning#      | Medium         | Medium  | Low–Medium    | CNNs, Transformers |
-| # Quantization# | High           | High    | Very Low      | Mobile/Edge AI     |
-| # Distillation# | Very High      | Medium  | Very Low      | Large NLP models   |
+| Technique    | Size Reduction | Speedup | Accuracy Loss | Best Use Case      |
+| ------------ | -------------- | ------- | ------------- | ------------------ |
+| Pruning#     | Medium         | Medium  | Low–Medium    | CNNs, Transformers |
+| Quantization | High           | High    | Very Low      | Mobile/Edge AI     |
+| Distillation | Very High      | Medium  | Very Low      | Large NLP models   |
 
 ---
 
