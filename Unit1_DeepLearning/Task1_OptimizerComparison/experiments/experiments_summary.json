@@ -1,0 +1,56 @@
+[
+  {
+    "optimizer": "adam",
+    "seed": 42,
+    "ok": true,
+    "out_dir": "experiments/adam_seed42"
+  },
+  {
+    "optimizer": "adam",
+    "seed": 2025,
+    "ok": true,
+    "out_dir": "experiments/adam_seed2025"
+  },
+  {
+    "optimizer": "adam",
+    "seed": 11,
+    "ok": true,
+    "out_dir": "experiments/adam_seed11"
+  },
+  {
+    "optimizer": "ranger",
+    "seed": 42,
+    "ok": true,
+    "out_dir": "experiments/ranger_seed42"
+  },
+  {
+    "optimizer": "ranger",
+    "seed": 2025,
+    "ok": true,
+    "out_dir": "experiments/ranger_seed2025"
+  },
+  {
+    "optimizer": "ranger",
+    "seed": 11,
+    "ok": true,
+    "out_dir": "experiments/ranger_seed11"
+  },
+  {
+    "optimizer": "lamb",
+    "seed": 42,
+    "ok": true,
+    "out_dir": "experiments/lamb_seed42"
+  },
+  {
+    "optimizer": "lamb",
+    "seed": 2025,
+    "ok": true,
+    "out_dir": "experiments/lamb_seed2025"
+  },
+  {
+    "optimizer": "lamb",
+    "seed": 11,
+    "ok": true,
+    "out_dir": "experiments/lamb_seed11"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "config": {
+    "model": "distilbert-base-uncased",
+    "dataset": "imdb",
+    "optimizer_requested": "adam",
+    "optimizer_used": {
+      "used": true,
+      "name": "adam"
+    },
+    "lr": 2e-05,
+    "seed": 42,
+    "num_train_samples": 200,
+    "num_eval_samples": 1000,
+    "num_train_epochs": 2,
+    "per_device_train_batch_size": 8
+  },
+  "train_time_s": 26.651105165481567,
+  "train_output": {
+    "train_loss": 0.13258147239685059,
+    "log_history": [
+      {
+        "loss": 0.1326,
+        "grad_norm": 0.2557433545589447,
+        "learning_rate": 4.0000000000000003e-07,
+        "epoch": 2.0,
+        "step": 50
+      },
+      {
+        "train_runtime": 22.8221,
+        "train_samples_per_second": 17.527,
+        "train_steps_per_second": 2.191,
+        "total_flos": 13246739865600.0,
+        "train_loss": 0.13258147239685059,
+        "epoch": 2.0,
+        "step": 50
+      },
+      {
+        "eval_loss": 0.01264486089348793,
+        "eval_accuracy": 1.0,
+        "eval_runtime": 8.1773,
+        "eval_samples_per_second": 122.289,
+        "eval_steps_per_second": 1.957,
+        "epoch": 2.0,
+        "step": 50
+      }
+    ]
+  },
+  "eval_metrics": {
+    "eval_loss": 0.01264486089348793,
+    "eval_accuracy": 1.0,
+    "eval_runtime": 8.1773,
+    "eval_samples_per_second": 122.289,
+    "eval_steps_per_second": 1.957,
+    "epoch": 2.0
+  },
+  "model_stats": {
+    "num_params": 66955010,
+    "model_size_bytes": 1073342056
+  }
+}

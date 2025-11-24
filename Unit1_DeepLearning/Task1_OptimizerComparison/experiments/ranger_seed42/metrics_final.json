@@ -1,0 +1,60 @@
+{
+  "config": {
+    "model": "distilbert-base-uncased",
+    "dataset": "imdb",
+    "optimizer_requested": "ranger",
+    "optimizer_used": {
+      "used": true,
+      "name": "ranger"
+    },
+    "lr": 2e-05,
+    "seed": 42,
+    "num_train_samples": 200,
+    "num_eval_samples": 1000,
+    "num_train_epochs": 2,
+    "per_device_train_batch_size": 8
+  },
+  "train_time_s": 22.593475818634033,
+  "train_output": {
+    "train_loss": 0.683486328125,
+    "log_history": [
+      {
+        "loss": 0.6835,
+        "grad_norm": 4.748297214508057,
+        "learning_rate": 4.0000000000000003e-07,
+        "epoch": 2.0,
+        "step": 50
+      },
+      {
+        "train_runtime": 18.7606,
+        "train_samples_per_second": 21.321,
+        "train_steps_per_second": 2.665,
+        "total_flos": 13246739865600.0,
+        "train_loss": 0.683486328125,
+        "epoch": 2.0,
+        "step": 50
+      },
+      {
+        "eval_loss": 0.6652458310127258,
+        "eval_accuracy": 0.973,
+        "eval_runtime": 8.1792,
+        "eval_samples_per_second": 122.262,
+        "eval_steps_per_second": 1.956,
+        "epoch": 2.0,
+        "step": 50
+      }
+    ]
+  },
+  "eval_metrics": {
+    "eval_loss": 0.6652458310127258,
+    "eval_accuracy": 0.973,
+    "eval_runtime": 8.1792,
+    "eval_samples_per_second": 122.262,
+    "eval_steps_per_second": 1.956,
+    "epoch": 2.0
+  },
+  "model_stats": {
+    "num_params": 66955010,
+    "model_size_bytes": 1341164486
+  }
+}

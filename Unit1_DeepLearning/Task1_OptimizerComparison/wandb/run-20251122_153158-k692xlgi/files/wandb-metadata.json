@@ -1,0 +1,37 @@
+{
+  "os": "macOS-26.0.1-arm64-arm-64bit",
+  "python": "CPython 3.10.15",
+  "startedAt": "2025-11-22T10:01:58.619474Z",
+  "program": "/Users/deepeshraj/Documents/GitHub/Advanced-AI-CaseStudies/Unit1_DeepLearning/code/main.py",
+  "codePath": "Unit1_DeepLearning/code/main.py",
+  "codePathLocal": "main.py",
+  "git": {
+    "remote": "https://github.com/Deepesh2201/Advanced-AI-CaseStudies.git",
+    "commit": "3ed37a5206216f75cff024c674f7e1ca2abeb2f8"
+  },
+  "email": "deepeshinfo22@gmail.com",
+  "root": "/Users/deepeshraj/Documents/GitHub/Advanced-AI-CaseStudies/Unit1_DeepLearning/code",
+  "host": "Deepeshs-MacBook-Air.local",
+  "executable": "/opt/anaconda3/envs/adv_ai2/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "234145304576"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "apple": {
+    "name": "Apple M2",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 8,
+    "memoryGb": 8,
+    "swapTotalBytes": "9663676416",
+    "ramTotalBytes": "8589934592"
+  },
+  "writerId": "39jih6xd41m2081q48l9n8952vet1cnq"
+}

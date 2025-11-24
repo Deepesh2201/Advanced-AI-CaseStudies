@@ -1,0 +1,10 @@
+optimizer,seed,elapsed_s,eval_accuracy,out_dir
+adam,42,26.651105165481567,1.0,experiments/adam_seed42
+adam,2025,22.915074110031128,1.0,experiments/adam_seed2025
+adam,11,23.26474380493164,1.0,experiments/adam_seed11
+ranger,42,22.593475818634033,0.973,experiments/ranger_seed42
+ranger,2025,35.35532879829407,0.409,experiments/ranger_seed2025
+ranger,11,37.02022624015808,0.002,experiments/ranger_seed11
+lamb,42,32.32150483131409,0.965,experiments/lamb_seed42
+lamb,2025,38.827409982681274,0.379,experiments/lamb_seed2025
+lamb,11,33.05192804336548,0.001,experiments/lamb_seed11
