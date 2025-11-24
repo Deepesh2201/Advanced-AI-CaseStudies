@@ -8,7 +8,7 @@
 
 ---
 
-## 1. Introduction
+## Introduction
 
 Deep learning (DL) models are getting bigger and need more computing power. This makes it hard to use them on small devices like mobile phones, simple gadgets (edge devices) or in apps that need to run instantly (real-time applications).
 
@@ -16,15 +16,13 @@ Model compression techniques are ways to shrink these models. The goal is to use
 
 **This mini-survey explores three major techniques:**
 
-- ## Pruning
-- ## Quantization
-- ## Knowledge Distillation
+- ## 1. Pruning
+- ## 2. Quantization
+- ## 3. Knowledge Distillation
 
 ---
 
-## 2. Pruning
-
-### What is Pruning?
+## 1. Pruning
 
 Pruning removes unnecessary weights, neurons, or attention heads from a trained model. The idea is that many parameters contribute very little to the final output and can be removed.
 
@@ -41,18 +39,20 @@ Pruning removes unnecessary weights, neurons, or attention heads from a trained 
 - Faster inference
 - Lower RAM usage
 
-### Real-World Examples
+### Few Real-World Examples
 
-- **Google MobileNet-V2 pruning** – MobileNetV2 achieved a $\approx 30\% \text{ to } 40\%$ inference speedup over MobileNetV1 primarily through its novel architecture, specifically the inverted residual blocks and linear bottlenecks. To further optimize MobileNetV2 for deployment, researchers apply Structured Channel Pruning, which involves removing entire low-importance filters in the convolutional layers. This process significantly reduces the model's computational load (FLOPs) and parameters—often achieving an additional $50\%$ reduction in FLOPs—while employing fine-tuning to ensure the accuracy drop remains minimal, making the model faster and smaller for mobile and edge devices.
+- **Cloud Service Cost Reduction:**
+  For massive cloud services like image search, pruning large backbone models by 20% - 30% results in millions of dollars saved annually. Lower computation demands translate directly to a need for fewer GPUs and reduced electricity consumption across global data centers.
 
-- OpenAI GPT-2 pruning – reduces parameter count without major accuracy loss
-- TensorFlow Model Optimization Toolkit offers magnitude-based pruning for edge devices
+- **Always-On Smart Speakers:**
+  Unstructured Weight Pruning creates sparse matrices in acoustic models for trigger word detection. This allows smart speakers to operate in an ultra-low-power, always-on state with minimal battery drain and near-zero latency for recognizing the wake word, maintaining immediate responsiveness.
+
+- **Autonomous Vehicles:**
+  Pruning object detection models (e.g., YOLO) with Structured Filter Pruning reduces computational load by 30% - 50%. This increase in the inference frame rate (FPS) is critical for autonomous systems to guarantee instantaneous decision-making and vehicle safety in fast-changing road environments.
 
 ---
 
-## 3. Quantization
-
-### What is Quantization?
+## 2. Quantization
 
 Quantization reduces the precision of weights and activations from floating-point (FP32) to lower-bit formats such as FP16, INT8, or INT4.
 
@@ -68,15 +68,20 @@ Quantization reduces the precision of weights and activations from floating-poin
 - Faster CPU inference
 - Very small accuracy drop
 
-### Real-World Examples
+### Few Real-World Examples
 
-- LLaMA-3 4-bit quantization# enables on-device LLM inference
-- Google TensorFlow Lite 8-bit quantization# for Android apps
-- OpenAI Whisper quantized# runs fast on laptops with small accuracy loss
+- **Mobile Face Recognition:**
+  Quantization reduces a face detection model's size from 100MB to 25MB on an Android phone by converting weights to 8-bit integers. This allows the model to run offline and instantly when unlocking the phone or organizing photos, consuming far less battery power than running the original high-precision model.
+
+- **Voice Assistants (Edge Devices):**
+  Smart speakers utilize quantization for their "wake word" detection models. By simplifying the calculations, the model runs continuously on a low-power processor using minimal electricity, allowing the device to remain "always-on" and ready to respond immediately without needing to constantly access cloud servers.
+
+- **Augmented Reality (AR) Filters:**
+  Real-time AR filters, like those that track your hands or segment the background, are powered by quantized models. These models run 3 to 4 times faster on a mobile GPU's integer units, ensuring the virtual effects track perfectly without the noticeable lag that a high-precision model would cause.
 
 ---
 
-## 4. Knowledge Distillation
+## 3. Knowledge Distillation
 
 ### What is Distillation?
 
@@ -90,25 +95,30 @@ A smaller model (student) is trained to mimic a larger model (teacher) by learni
 
 ### Real-World Examples
 
-- DistilBERT is 40% smaller than BERT but retains 97% accuracy
-- TinyBERT designed for mobile NLP tasks
-- MobileNet distilled for real-time detection on phones
+- **Google Search Ranking Models:**
+  Google trains a massive, highly accurate Teacher model to learn complex search ranking logic. Knowledge Distillation then transfers this logic to a much smaller Student model, allowing search results to be returned instantly and efficiently across billions of daily queries with minimal loss in ranking quality.
+
+- **On-Device Language Translation:**
+  A large cloud-based transformer model acts as the Teacher to teach a small, specialized mobile model (the Student) the nuances of language. This enables the student model to perform high-quality translation offline on a smartphone app, like Google Translate, without needing constant network access.
+
+- **Speech Command Recognition:**
+  A complex acoustic model (the Teacher) provides "soft labels"—its probability distribution for all potential words—to a tiny Student model designed for an edge microcontroller. The student uses this distilled knowledge to accurately recognize a limited set of voice commands with very low latency and power consumption.
 
 ---
 
-## 5. Summary Comparison
+## Comparison of all three
 
 | Technique    | Size Reduction | Speedup | Accuracy Loss | Best Use Case      |
 | ------------ | -------------- | ------- | ------------- | ------------------ |
-| Pruning#     | Medium         | Medium  | Low–Medium    | CNNs, Transformers |
+| Pruning      | Medium         | Medium  | Low–Medium    | CNNs, Transformers |
 | Quantization | High           | High    | Very Low      | Mobile/Edge AI     |
 | Distillation | Very High      | Medium  | Very Low      | Large NLP models   |
 
 ---
 
-## 6. Conclusion
+## Conclusion
 
-Pruning, quantization, and knowledge distillation are powerful tools that make deep learning models efficient and deployable on resource-constrained devices. Quantization gives the best speedup, pruning reduces unnecessary structure, and distillation provides compact models with minimal accuracy drop.
+Pruning, quantization and knowledge distillation are powerful tools that make deep learning models efficient and deployable on resource-constrained devices. Quantization gives the best speedup, pruning reduces unnecessary structure and distillation provides compact models with minimal accuracy drop.
 
 Together, these techniques enable real-world deployment of modern deep learning systems.
 
