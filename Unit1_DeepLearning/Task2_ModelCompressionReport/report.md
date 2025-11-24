@@ -1,8 +1,10 @@
 # Research Mini-Survey: Model Compression Techniques
 
-## Unit 1, Task 2: Compare model compression methods: Pruning, Quantization, and Knowledge Distillation
+## Unit 1, Task 2:
 
-### Author:# Deepesh
+## Compare model compression methods: Pruning, Quantization, and Knowledge Distillation
+
+### Author: Deepesh
 
 ---
 
@@ -12,34 +14,34 @@ Deep learning (DL) models are getting bigger and need more computing power. This
 
 Model compression techniques are ways to shrink these models. The goal is to use less memory, need less calculation time and run faster, all while trying to keep the model's performance (accuracy) high.
 
-** This mini-survey explores three major techniques:**
+**This mini-survey explores three major techniques:**
 
-- # Pruning#
-- # Quantization#
-- # Knowledge Distillation#
+- ## Pruning
+- ## Quantization
+- ## Knowledge Distillation
 
 ---
 
 ## 2. Pruning
 
-### # What is Pruning?#
+### What is Pruning?
 
 Pruning removes unnecessary weights, neurons, or attention heads from a trained model. The idea is that many parameters contribute very little to the final output and can be removed.
 
-### # Types of Pruning#
+### Types of Pruning
 
 - Weight pruning (remove low-magnitude weights)
 - Neuron pruning
 - Layer pruning
 - Attention-head pruning (Transformers)
 
-### # Benefits#
+### Benefits
 
 - Up to 50–90% reduction in parameters
 - Faster inference
 - Lower RAM usage
 
-### # Real-World Examples#
+### Real-World Examples
 
 - # Google MobileNet-V2 pruning# – 30–40% faster inference
 - # OpenAI GPT-2 pruning# – reduces parameter count without major accuracy loss
@@ -49,23 +51,23 @@ Pruning removes unnecessary weights, neurons, or attention heads from a trained 
 
 ## 3. Quantization
 
-### # What is Quantization?#
+### What is Quantization?
 
 Quantization reduces the precision of weights and activations from floating-point (FP32) to lower-bit formats such as FP16, INT8, or INT4.
 
 ### # Types#
 
-- # Post-training quantization (PTQ)
-- # Quantization-aware training (QAT)
-- # Dynamic quantization
+- ## Post-training quantization (PTQ)
+- ## Quantization-aware training (QAT)
+- ## Dynamic quantization
 
-### # Benefits#
+### Benefits
 
-- 4× reduction in model size (FP32 → INT8)
-- Faster CPU inference
-- Very small accuracy drop
+- # 4× reduction in model size (FP32 → INT8)
+- # Faster CPU inference
+- # Very small accuracy drop
 
-### # Real-World Examples#
+### Real-World Examples
 
 - # LLaMA-3 4-bit quantization# enables on-device LLM inference
 - # Google TensorFlow Lite 8-bit quantization# for Android apps
@@ -75,21 +77,21 @@ Quantization reduces the precision of weights and activations from floating-poin
 
 ## 4. Knowledge Distillation
 
-### # What is Distillation?#
+### What is Distillation?
 
-A smaller model (# student# ) is trained to mimic a larger model (# teacher# ) by learning from its soft predictions.
+A smaller model (student) is trained to mimic a larger model (teacher) by learning from its soft predictions.
 
-### # Benefits#
+### Benefits
 
-- 2×–20× reduction in size
-- Nearly same accuracy
-- Works extremely well for NLP & Transformers
+- # 2×–20× reduction in size
+- # Nearly same accuracy
+- # Works extremely well for NLP & Transformers
 
-### # Real-World Examples#
+### Real-World Examples
 
-- # DistilBERT# is 40% smaller than BERT but retains 97% accuracy
-- # TinyBERT# designed for mobile NLP tasks
-- # MobileNet distilled# for real-time detection on phones
+- # DistilBERT is 40% smaller than BERT but retains 97% accuracy
+- # TinyBERT designed for mobile NLP tasks
+- # MobileNet distilled for real-time detection on phones
 
 ---
 
@@ -111,4 +113,4 @@ Together, these techniques enable real-world deployment of modern deep learning 
 
 ---
 
-# End of Report#
+# End of Report
