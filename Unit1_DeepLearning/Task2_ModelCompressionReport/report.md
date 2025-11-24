@@ -16,15 +16,17 @@ Model compression techniques are ways to shrink these models. The goal is to use
 
 **This mini-survey explores three major techniques:**
 
-- ## 1. Pruning
-- ## 2. Quantization
-- ## 3. Knowledge Distillation
+### 1. Pruning
+
+### 2. Quantization
+
+### 3. Knowledge Distillation
 
 ---
 
 ## 1. Pruning
 
-Pruning removes unnecessary weights, neurons, or attention heads from a trained model. The idea is that many parameters contribute very little to the final output and can be removed.
+Pruning removes unnecessary weights, neurons, or attention heads from a trained model. The idea is that many parameters contribute very little to the final output and can be removed. Examples : MobileNetV2 (Image Classification), BERT (Large Language Models - LLMs), VGG-16 (Early CNN Architecture).
 
 ### Types of Pruning
 
@@ -48,13 +50,13 @@ Pruning removes unnecessary weights, neurons, or attention heads from a trained 
   Unstructured Weight Pruning creates sparse matrices in acoustic models for trigger word detection. This allows smart speakers to operate in an ultra-low-power, always-on state with minimal battery drain and near-zero latency for recognizing the wake word, maintaining immediate responsiveness.
 
 - **Autonomous Vehicles:**
-  Pruning object detection models (e.g., YOLO) with Structured Filter Pruning reduces computational load by 30% - 50%. This increase in the inference frame rate (FPS) is critical for autonomous systems to guarantee instantaneous decision-making and vehicle safety in fast-changing road environments.
+  Pruning object detection models with Structured Filter Pruning reduces computational load by 30% - 50%. This increase in the inference frame rate (FPS) is critical for autonomous systems to guarantee instantaneous decision-making and vehicle safety in fast-changing road environments.
 
 ---
 
 ## 2. Quantization
 
-Quantization reduces the precision of weights and activations from floating-point (FP32) to lower-bit formats such as FP16, INT8, or INT4.
+Quantization reduces the precision of weights and activations from floating-point (FP32) to lower-bit formats such as FP16, INT8, or INT4. Examples :ResNet-50 (Image Classification), LLaMA Series (Large Language Models), SqueezeNet (Highly Compact CNN).
 
 ### Types
 
@@ -85,7 +87,7 @@ Quantization reduces the precision of weights and activations from floating-poin
 
 ### What is Distillation?
 
-A smaller model (student) is trained to mimic a larger model (teacher) by learning from its soft predictions.
+A smaller model (student) is trained to mimic a larger model (teacher) by learning from its soft predictions. Examples : DistilBERT (LLM Student), Image Recognition (Ensemble Compression), Speech Recognition (Acoustic Models).
 
 ### Benefits
 
