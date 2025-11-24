@@ -43,9 +43,10 @@ Pruning removes unnecessary weights, neurons, or attention heads from a trained 
 
 ### Real-World Examples
 
-- Google MobileNet-V2 pruning – 30–40% faster inference
-- OpenAI GPT-2 pruning# – reduces parameter count without major accuracy loss
-- TensorFlow Model Optimization Toolkit# offers magnitude-based pruning for edge devices
+- Google MobileNet-V2 pruning – MobileNetV2 achieved a $\approx 30\% \text{ to } 40\%$ inference speedup over MobileNetV1 primarily through its novel architecture, specifically the inverted residual blocks and linear bottlenecks. To further optimize MobileNetV2 for deployment, researchers apply Structured Channel Pruning, which involves removing entire low-importance filters in the convolutional layers. This process significantly reduces the model's computational load (FLOPs) and parameters—often achieving an additional $50\%$ reduction in FLOPs—while employing fine-tuning to ensure the accuracy drop remains minimal, making the model faster and smaller for mobile and edge devices.
+
+- OpenAI GPT-2 pruning – reduces parameter count without major accuracy loss
+- TensorFlow Model Optimization Toolkit offers magnitude-based pruning for edge devices
 
 ---
 
