@@ -125,5 +125,3 @@ Pruning, quantization and knowledge distillation are powerful tools that make de
 Together, these techniques enable real-world deployment of modern deep learning systems.
 
 ---
-
-# End of Report
