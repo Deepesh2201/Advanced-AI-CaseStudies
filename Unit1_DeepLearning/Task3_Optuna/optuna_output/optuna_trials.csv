@@ -1,0 +1,4 @@
+json
+{"trial": 0, "params": {"lr": 0.0009377638864569318, "batch_size": 64, "n_filters": 48, "dropout": 0.43625153101958125, "optimizer": "adam"}, "val_acc": 0.9912, "time_s": 264.1574139595032}
+{"trial": 1, "params": {"lr": 0.0007348120132859094, "batch_size": 32, "n_filters": 64, "dropout": 0.08396126144165084, "optimizer": "sgd"}, "val_acc": 0.9798, "time_s": 333.31727266311646}
+{"trial": 2, "params": {"lr": 0.007960791300736429, "batch_size": 64, "n_filters": 16, "dropout": 0.1668871092005978, "optimizer": "sgd"}, "val_acc": 0.9902, "time_s": 77.29897117614746}

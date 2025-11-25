@@ -1,0 +1,12 @@
+{
+  "best_params": {
+    "lr": 0.0009377638864569318,
+    "batch_size": 64,
+    "n_filters": 48,
+    "dropout": 0.43625153101958125,
+    "optimizer": "adam"
+  },
+  "best_value": 0.9912,
+  "n_trials": 12,
+  "total_time_s": 1489.7666029930115
+}
