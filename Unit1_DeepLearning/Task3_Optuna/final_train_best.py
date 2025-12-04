@@ -14,17 +14,15 @@ BEST = {
   "optimizer": "adam"
 }
 
-SEED = 42
-EPOCHS = 20    # final long training
+SEED = 2025
+EPOCHS = 20
 OUTPUT_DIR = "./final_best"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# reproducibility
 random.seed(SEED); np.random.seed(SEED); torch.manual_seed(SEED)
 if torch.cuda.is_available(): torch.cuda.manual_seed_all(SEED)
 DEVICE = "cpu"
 
-# model (same as before)
 class SimpleCNN(nn.Module):
     def __init__(self, n_filters=32, dropout=0.25):
         super().__init__()

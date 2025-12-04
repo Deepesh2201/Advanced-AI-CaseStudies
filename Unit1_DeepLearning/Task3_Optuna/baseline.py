@@ -14,7 +14,7 @@ from torch.utils.data import DataLoader
 SEED = 40
 BATCH_SIZE = 64
 LR = 1e-3
-EPOCHS = 10
+EPOCHS = 20
 OUTPUT_DIR = "./baseline_output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

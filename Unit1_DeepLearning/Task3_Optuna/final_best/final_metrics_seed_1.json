@@ -1,0 +1,15 @@
+{
+  "best_params": {
+    "lr": 0.0009377638864569318,
+    "batch_size": 64,
+    "n_filters": 48,
+    "dropout": 0.43625153101958125,
+    "optimizer": "adam"
+  },
+  "seed": 42,
+  "epochs": 20,
+  "device": "cpu",
+  "train_time_s": 1637.056105852127,
+  "test_accuracy": 0.9934,
+  "test_loss": 0.02773744513988495
+}
